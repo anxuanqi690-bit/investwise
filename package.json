@@ -1,0 +1,18 @@
+{
+  "name": "investwise",
+  "version": "1.0.0",
+  "description": "InvestWise - Stock & Finance Education Site",
+  "scripts": {
+    "dev": "echo 'Static site - use any local server'",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "investing",
+    "stocks",
+    "finance",
+    "education",
+    "AdSense"
+  ],
+  "author": "InvestWise",
+  "license": "MIT"
+}

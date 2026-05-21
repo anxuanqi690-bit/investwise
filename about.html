@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About InvestWise - Our mission to provide free, accessible financial education to investors worldwide.">
+  <title>About Us - InvestWise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>📈</span>
+        <span>InvestWise</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="articles/stock-market-basics.html">Articles</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>About InvestWise</h1>
+    <p>Empowering investors with free, accessible financial education since 2024</p>
+  </header>
+
+  <!-- Content -->
+  <main class="legal-content">
+    <h2>Our Mission</h2>
+    <p>At InvestWise, our mission is to democratize financial education. We believe that everyone deserves access to quality investment knowledge, regardless of their background or initial capital. Our platform provides comprehensive, jargon-free educational content that helps both beginners and experienced investors make more informed decisions.</p>
+
+    <h2>Who We Are</h2>
+    <p>InvestWise was founded by a group of finance enthusiasts, former Wall Street professionals, and self-taught investors who understand the challenges of learning about the stock market. We've experienced firsthand how confusing and intimidating investing can be for newcomers.</p>
+    <p>Our team combines:</p>
+    <ul>
+      <li><strong>Wall Street Experience:</strong> Former analysts from major investment banks who bring institutional-grade knowledge</li>
+      <li><strong>Self-Taught Investors:</strong> Individuals who learned the hard way and want to save others from common mistakes</li>
+      <li><strong>Financial Writers:</strong> Skilled communicators who can break down complex topics into digestible content</li>
+      <li><strong>Tech Experts:</strong> Professionals who ensure our platform delivers the best user experience</li>
+    </ul>
+
+    <h2>What We Offer</h2>
+    <p>Our educational platform covers everything from basic stock market concepts to advanced trading strategies:</p>
+    <ul>
+      <li><strong>Beginner Guides:</strong> Easy-to-understand explanations of fundamental concepts</li>
+      <li><strong>Technical Analysis:</strong> Chart patterns, indicators, and trading signals</li>
+      <li><strong>Fundamental Analysis:</strong> How to read financial statements and evaluate companies</li>
+      <li><strong>Investment Strategies:</strong> Value investing, growth investing, dividend investing, and more</li>
+      <li><strong>Risk Management:</strong> Protecting your capital through smart position sizing and diversification</li>
+    </ul>
+
+    <h2>Our Principles</h2>
+    
+    <h3>🎯 Education First</h3>
+    <p>Our primary goal is education, not advice. We provide the knowledge you need to form your own investment decisions. We never recommend specific stocks or guarantee returns.</p>
+
+    <h3>📊 Evidence-Based</h3>
+    <p>Our content is grounded in academic research, historical data, and proven investment principles. We cite our sources and explain the reasoning behind our educational material.</p>
+
+    <h3>🔄 Continuous Improvement</h3>
+    <p>Financial markets evolve, and so does our content. We regularly update our articles to reflect current market conditions and the latest research in finance.</p>
+
+    <h3>⚠️ Risk Awareness</h3>
+    <p>We emphasize risk management and help readers understand that all investments carry risk. We never minimize the potential for losses.</p>
+
+    <h2>Why InvestWise Exists</h2>
+    <p>Traditional financial education has been gatekept behind expensive courses, exclusive seminars, and paywalled content. This creates an information asymmetry where institutional investors have advantages that retail investors lack.</p>
+    <p>We're changing that. By providing free, comprehensive education, we're leveling the playing field. Our readers learn the same concepts that professional investors use — concepts that were once only taught at elite business schools.</p>
+
+    <h2>Contact Us</h2>
+    <p>We love hearing from our readers! Whether you have questions about our content, suggestions for new topics, or just want to share your investment journey, we're here.</p>
+    <p><strong>Email:</strong> contact@investwise.vercel.app</p>
+    <p><a href="contact.html">Visit our Contact Page →</a></p>
+
+    <div class="highlight-box" style="margin-top: 2rem;">
+      <h4>📋 Important Note</h4>
+      <p>While we strive to provide accurate and up-to-date information, InvestWise is an educational resource only. Nothing on this website constitutes investment advice. Always consult with a licensed financial advisor before making investment decisions. <a href="disclaimer.html">Read our full disclaimer →</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>📈 InvestWise</h4>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Your trusted source for free stock market education.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles/stock-market-basics.html">Articles</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 InvestWise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

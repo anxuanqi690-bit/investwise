@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact InvestWise - Get in touch with questions, feedback, or partnership inquiries.">
+  <title>Contact Us - InvestWise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>📈</span>
+        <span>InvestWise</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="articles/stock-market-basics.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Questions, feedback, or just saying hello.</p>
+  </header>
+
+  <!-- Content -->
+  <main style="max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem 4rem;">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">Send us a message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic...</option>
+              <option value="general">General Inquiry</option>
+              <option value="content">Content Question</option>
+              <option value="feedback">Feedback & Suggestions</option>
+              <option value="correction">Report an Error</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- FAQ Section -->
+      <div>
+        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+        
+        <div class="faq-section">
+          <div class="faq-item">
+            <h4>❓ Do you offer personalized investment advice?</h4>
+            <p>No, InvestWise is an educational platform only. We do not provide personalized investment advice, portfolio management, or financial planning services. For personalized advice, please consult a licensed financial advisor.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>❓ Can I use your content for my own website or blog?</h4>
+            <p>You may share links to our articles and quote brief excerpts with proper attribution. However, reproducing our content in full or using it commercially requires prior written permission. Please contact us for licensing inquiries.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>❓ How often is your content updated?</h4>
+            <p>We regularly review and update our articles to ensure accuracy and relevance. Major articles are reviewed monthly, while market-related content may be updated as needed. Each article shows its last updated date.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>❓ I found an error in one of your articles. What should I do?</h4>
+            <p>We appreciate when readers catch errors! Please use the contact form above and select "Report an Error" as the subject. Include the article title, the specific issue, and your suggested correction if possible.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>❓ Do you accept guest posts or contributor submissions?</h4>
+            <p>We're not currently accepting guest posts or contributor submissions. However, we're always open to feedback and suggestions for topics you'd like us to cover. Use the contact form to share your ideas!</p>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 1.5rem;">
+          <h4>📧 Direct Email</h4>
+          <p>Prefer email? Reach us at <a href="mailto:contact@investwise.vercel.app">contact@investwise.vercel.app</a></p>
+          <p style="margin-top: 0.5rem; font-size: 0.9rem;">We typically respond within 2-3 business days.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>📈 InvestWise</h4>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Your trusted source for free stock market education.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles/stock-market-basics.html">Articles</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 InvestWise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show success message
+      const form = this;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Message Sent! ✓';
+      submitBtn.style.backgroundColor = '#10B981';
+      
+      setTimeout(function() {
+        form.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.style.backgroundColor = '';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

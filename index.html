@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InvestWise - Your trusted source for free stock market education, investment strategies, and financial literacy. Learn to invest smartly with our comprehensive guides.">
+  <meta name="keywords" content="stock market, investing, finance, stocks, trading, dividend, portfolio, technical analysis, fundamental analysis, investment strategies">
+  <meta name="author" content="InvestWise">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="InvestWise - Smart Investing Starts Here">
+  <meta property="og:description" content="Free stock market education and investment strategies for beginners and experienced investors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://investwise.vercel.app">
+  <meta property="og:site_name" content="InvestWise">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InvestWise - Smart Investing Starts Here">
+  <meta name="twitter:description" content="Free stock market education and investment strategies.">
+  
+  <title>InvestWise - Smart Investing Starts Here</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#1E293B',
+            gold: '#F59E0B',
+            green: '#10B981',
+            red: '#EF4444'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "InvestWise",
+    "url": "https://investwise.vercel.app",
+    "description": "Free stock market education and investment strategies",
+    "publisher": {
+      "@type": "Organization",
+      "name": "InvestWise"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>📈</span>
+        <span>InvestWise</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="articles/stock-market-basics.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Smart Investing Starts Here</h1>
+    <p class="subtitle">Master the stock market with free, comprehensive education. From beginner basics to advanced strategies — become a more confident investor.</p>
+    <div class="search-box">
+      <input type="text" placeholder="Search articles..." aria-label="Search articles">
+      <span class="search-icon">🔍</span>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="section">
+    <h2 class="section-title">
+      <span class="emoji">⭐</span>
+      Featured Articles
+    </h2>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-emoji">📊</div>
+        <span class="category-badge">📊 Basics</span>
+        <h3><a href="articles/stock-market-basics.html">Stock Market Basics: A Complete Beginner's Guide</a></h3>
+        <p>Learn the fundamentals of how stock markets work, what drives prices, and how you can start your investment journey with confidence.</p>
+        <div class="card-meta">
+          <span class="read-time">⏱️ 12 min read</span>
+          <span>Updated Jan 2025</span>
+        </div>
+      </article>
+      
+      <article class="card">
+        <div class="card-emoji">📈</div>
+        <span class="category-badge">📊 Technical</span>
+        <h3><a href="articles/technical-analysis-101.html">Technical Analysis 101: Read Charts Like a Pro</a></h3>
+        <p>Master the art of reading price charts, identifying trends, and using indicators like RSI and MACD to make informed decisions.</p>
+        <div class="card-meta">
+          <span class="read-time">⏱️ 15 min read</span>
+          <span>Updated Jan 2025</span>
+        </div>
+      </article>
+      
+      <article class="card">
+        <div class="card-emoji">💎</div>
+        <span class="category-badge">📊 Value</span>
+        <h3><a href="articles/value-investing.html">Value Investing: The Warren Buffett Way</a></h3>
+        <p>Discover the time-tested strategy of buying undervalued stocks with durable competitive advantages and holding for the long term.</p>
+        <div class="card-meta">
+          <span class="read-time">⏱️ 14 min read</span>
+          <span>Updated Jan 2025</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Disclaimer Banner -->
+  <div class="disclaimer-banner">
+    <span class="icon">⚠️</span>
+    <p><strong>Important:</strong> Investing involves risk. This content is for educational purposes only and does not constitute investment advice. Always do your own research.</p>
+  </div>
+
+  <!-- Article Categories -->
+  <section class="section">
+    <h2 class="section-title">
+      <span class="emoji">📚</span>
+      Explore by Category
+    </h2>
+    
+    <div class="category-grid">
+      <!-- Technical Analysis -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">📊</span>
+          <h3>Technical Analysis</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">📉</span>
+            <div>
+              <h4><a href="articles/how-to-read-candlestick.html">How to Read Candlestick Charts</a></h4>
+              <p>Master Japanese candlestick patterns for better entry points</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">📊</span>
+            <div>
+              <h4><a href="articles/technical-analysis-101.html">Technical Analysis 101</a></h4>
+              <p>Support, resistance, trends, and key indicators</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fundamental Analysis -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">📋</span>
+          <h3>Fundamental Analysis</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">📄</span>
+            <div>
+              <h4><a href="articles/fundamental-analysis.html">Fundamental Analysis Guide</a></h4>
+              <p>Read financial statements like a pro analyst</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">🔍</span>
+            <div>
+              <h4><a href="articles/stock-screening-guide.html">Stock Screening Guide</a></h4>
+              <p>Find quality stocks using financial metrics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dividend Investing -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">💰</span>
+          <h3>Dividend Investing</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">💵</span>
+            <div>
+              <h4><a href="articles/dividend-investing-guide.html">Dividend Investing Complete Guide</a></h4>
+              <p>Build passive income through dividend stocks</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">📈</span>
+            <div>
+              <h4><a href="articles/etf-investing-guide.html">ETF Investing Guide</a></h4>
+              <p>Index funds and exchange-traded funds explained</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth Stocks -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">🚀</span>
+          <h3>Growth Stocks</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">🚀</span>
+            <div>
+              <h4><a href="articles/growth-stocks-guide.html">Growth Stocks Guide</a></h4>
+              <p>Identify high-potential growth companies early</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">💎</span>
+            <div>
+              <h4><a href="articles/value-investing.html">Value Investing Strategy</a></h4>
+              <p>Warren Buffett-style investing explained</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Risk Management -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">🛡️</span>
+          <h3>Risk Management</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">⚖️</span>
+            <div>
+              <h4><a href="articles/risk-management.html">Risk Management Strategies</a></h4>
+              <p>Protect your capital with proven strategies</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">🌐</span>
+            <div>
+              <h4><a href="articles/portfolio-diversification.html">Portfolio Diversification</a></h4>
+              <p>Spread risk across different asset classes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trading Basics -->
+      <div class="category-section">
+        <div class="category-header">
+          <span class="emoji">📝</span>
+          <h3>Trading Basics</h3>
+        </div>
+        <div class="article-list">
+          <div class="article-item">
+            <span class="emoji">📝</span>
+            <div>
+              <h4><a href="articles/market-orders-explained.html">Market Orders Explained</a></h4>
+              <p>Market, limit, stop-loss, and more order types</p>
+            </div>
+          </div>
+          <div class="article-item">
+            <span class="emoji">📊</span>
+            <div>
+              <h4><a href="articles/stock-market-basics.html">Stock Market Basics</a></h4>
+              <p>Understanding how markets work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Articles Section -->
+  <section class="section">
+    <h2 class="section-title">
+      <span class="emoji">📖</span>
+      All Articles
+    </h2>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-emoji">📊</div>
+        <span class="category-badge">📝 Trading</span>
+        <h3><a href="articles/market-orders-explained.html">Market Orders Explained: Types & When to Use Each</a></h3>
+        <p>Understanding market orders, limit orders, stop-loss orders, and stop-limit orders is crucial for executing your trading strategy effectively.</p>
+        <div class="card-meta">
+          <span class="read-time">⏱️ 10 min read</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-emoji">🌐</div>
+        <span class="category-badge">🛡️ Risk</span>
+        <h3><a href="articles/portfolio-diversification.html">Portfolio Diversification: Don't Put All Eggs in One Basket</a></h3>
+        <p>Learn how Modern Portfolio Theory can help you maximize returns while minimizing risk through strategic asset allocation.</p>
+        <div class="card-meta">
+          <span class="read-time">⏱️ 11 min read</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>📈 InvestWise</h4>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Your trusted source for free stock market education and investment strategies.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles/stock-market-basics.html">Articles</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="articles/technical-analysis-101.html">Technical Analysis</a></li>
+          <li><a href="articles/fundamental-analysis.html">Fundamental Analysis</a></li>
+          <li><a href="articles/dividend-investing-guide.html">Dividend Investing</a></li>
+          <li><a href="articles/risk-management.html">Risk Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 InvestWise. All rights reserved. | <a href="disclaimer.html">Investment Disclaimer</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.getElementById('navLinks');
+      const menuToggle = document.querySelector('.menu-toggle');
+      
+      if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
