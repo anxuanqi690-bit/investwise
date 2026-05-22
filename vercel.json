@@ -3,5 +3,8 @@
   "buildCommand": null,
   "installCommand": null,
   "framework": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "analytics": {
+    "enabled": true
+  }
 }
